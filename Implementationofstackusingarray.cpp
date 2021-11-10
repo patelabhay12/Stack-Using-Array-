@@ -34,6 +34,7 @@ void push(Stack *st ,int x){
     }
 
 }
+
 int  pop(struct Stack *st){
     int x=-1;
     if(st->top==-1){
@@ -44,6 +45,20 @@ int  pop(struct Stack *st){
     }
     return x;
     
+}
+
+
+int IsEmpty(struct Stack st){
+    if(st.top==-1){
+        return 1;
+    }
+    return 0;
+}
+int IsFull(struct Stack st){
+    if(st.top==st.size-1){
+        return 1;
+    }
+    return 0;
 }
 
 
