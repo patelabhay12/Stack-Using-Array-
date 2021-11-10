@@ -61,6 +61,12 @@ int IsFull(struct Stack st){
     return 0;
 }
 
+int stackTop(struct Stack st){
+    if(!IsEmpty(st)){
+        return st.s[st.top];
+    }
+    return -1;
+}
 
 int main(){
     struct Stack st;
